@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Cobrinha</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #333; /* Cinza escuro para o fundo da página */
+            font-family: 'Inter', sans-serif; /* Fonte Inter Regular */
+        }
+        canvas {
+            border-radius: 15px; /* Bordas arredondadas */
+            border: 2px solid #000; /* Borda preta ao redor do canvas */
+        }
+        #title {
+            position: absolute;
+            font-size: 24px;
+            color: #fff; /* Cor branca para o título */
+            font-family: 'Inter', sans-serif;
+        }
+        #controls {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: #fff; /* Cor branca para o texto dos controles */
+        }
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #555; /* Cor de fundo dos botões */
+            color: #fff; /* Cor do texto dos botões */
+            border: none;
+            border-radius: 5px; /* Bordas arredondadas dos botões */
+            font-family: 'Inter', sans-serif;
+        }
+        button:hover {
+            background-color: #777; /* Cor de fundo dos botões ao passar o mouse */
+        }
+        #score {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="title">JOGO DO GAGO BETA</div>
+    <canvas id="gameCanvas"></canvas>
+    <div id="controls">
+        <button id="startButton">Iniciar</button>
+        <button id="pauseButton">Pausar</button>
+        <div id="score">Score: 0</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
